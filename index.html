@@ -6,65 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 <!--
 .tab { margin-left: 40px; }
 -->
 
-p.big{
-    font-size: 150%;
-}
 
-p.medbig{
-    font-size: 110%;
-}
-
-a:visited {
-    color: #3399ff;
-    background-color: transparent;
-    text-decoration: none;
-}
 a:hover {
     color: #3399ff;
     background-color: transparent;
     text-decoration: underline;
 }
+
 a:active {
     color: #3399ff;
     background-color: transparent;
     text-decoration: underline;
-}
-
-h1 {
-    color: black;
-    text-align: center;
-    font-family: Garamond;
-    font-style: normal;
-    font-variant: small-caps;
-    font-weight: 5000;
-    font-size: 500%;
-    line-height: 10vh;
-}
-
-h2 {
-    color: black;
-    text-align: center;
-    font-family: Garamond;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 4vh;
-    font-size: 200%
-}
-
-div.relative {
-    position: relative;
-    clear:both; 
 }
 
 img{
@@ -80,19 +36,6 @@ img{
         float: right;
 }
 
-div.wavehead {
-    /* The image used */
-	background-image: url(IMG_4557b.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-color: #D5D8DC;
-    border: 1px solid;
-    opacity: 1;
-    width: 100vw;
-    height: 30vh;
-    background-size: contain;
-}
-
 div.box {
   margin: 50px;
   background-color: #ffffff;
@@ -104,28 +47,12 @@ div.box {
     height: 315px;
 }
 
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 2px solid black;
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-  font-size: 44;
-   opacity: 1;
-}
-
-
 .row:after {
     content: "";
     clear: both;
     display: table;
 }
+
 [class*="col-"] {
     float: none;
     padding: 15px;
@@ -164,6 +91,7 @@ div.transbox p {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+
 html {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -176,53 +104,23 @@ html {
 }
 
 .menu li {
-    padding: 1px;
+    border-radius: 25px;
+    padding: 2px;
     text-align: center;
     float: center;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     background-color :#ffffff;
     color: #000000;
     width: 86%;
-    box-shadow: 0 1px 5px rgba( 100, 100, 100,1), 7px 7px 9px rgba( 100, 100, 100,2);
+    box-shadow: 7px 7px 9px rgba( 100, 100, 100,2);
 }
 
 .menu li:hover {
     background-color: #ffffff;
-}
-
-.aside {
-    background-color: #323250;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 18px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footerWrap {
-    width:60%;
-    position:fixed;
-    bottom: 10px;
-    left: 20%;
-    
-    
-}
-
-.footer {
-    border-radius: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    text-align: center;
-    background-color:rgb(237,237,237);
-    color: #000000;
-    font-size: 18px;
-    padding: 15px;
 }
 
 #block_container {
@@ -243,20 +141,12 @@ html {
   width: 100%;
 }
 
-.centerIM {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 #responsive-image {  width: 100%;  height: 100%;  max-width: 1800px; max-height: 400px;
 } 
 
 #responsive-image2 {  width: 45%;  height: auto;  max-width: 500px; max-height: 400px;
 } 
 
-/* Add a black background color to the top navigation */
 .topnav {
   position: relative;
   background-color: #246084;
@@ -436,21 +326,23 @@ hr {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #246084;
+  
 }
 
 .container {
-  display: inline-block;
+  padding:10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   background-color: white;
-  margin: 6px 0;
+  margin: 5px 0;
   transition: 0.4s;
 }
 
@@ -470,15 +362,41 @@ hr {
   box-sizing: border-box;
 }
 
-.botcolumn {
+
+.footerWrap {
+    width:5%;
+    min-width: 50px;
+    max-width: 70px;
+    position:fixed;
+    bottom: 5%;
+    left: 0%;
+    
+    
+}
+
+.footer {
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center;
+    background-color:rgb(237,237,237);
+    color: #000000;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+.sidecolumn {
   float: left;
-  width: 25%;
-  height:25px;
+  width: 100%;
+  height:55px;
   padding: 0px 0px;
 }
 
 /* Clearfix (clear floats) */
-.botrow::after {
+.siderow::after {
   content: "";
   clear: both;
   display: table;
@@ -492,7 +410,7 @@ hr {
 
 
 <button class="collapsible">
-    <div class="container" style="width: 0%;" onclick="myFunction(this)">
+    <div class="container" onclick="myFunction(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -571,17 +489,17 @@ hr {
 
     <div class="footer">
       <p style="margin-top: 0px;font-size:1.em;">
-      <div class="botrow">
-        <div class="botcolumn">
+      <div class="siderow">
+        <div class="sidecolumn">
           <a href="https://www.instagram.com/coastal_measures/" target="_blank"><img style="width:40px;max-width: 100%" src="images/logos/instagram/Instagram_Glyph_Gradient.png" alt="Instagram" ></a>
         </div>
-        <div class="botcolumn">
+        <div class="sidecolumn">
           <a href="https://www.youtube.com/channel/UCZixjX-Gspc6L5QCzvk4X8Q" target="_blank"><img style="width:40px;max-width: 100%" src="images/logos/youtube/yt_icon_rgb.png" alt="YouTube" ></a>
         </div>
-        <div class="botcolumn">
+        <div class="sidecolumn">
           <a href="https://www.linkedin.com/company/coastalmeasuresllc/" target="_blank"><img style="width:40px;max-width: 100%" src="images/logos/linkedin/LI-In-Bug.png" alt="LinkedIn" ></a>
         </div>
-        <div class="botcolumn">
+        <div class="sidecolumn">
           <a href="https://www.facebook.com/profile.php?id=100092177077241" target="_blank"><img style="width:40px;max-width: 100%" src="images/logos/facebook/f_logo_RGB-Blue_250.png" alt="Facebook" ></a>
         </div>
       </div>
